@@ -13,8 +13,11 @@ This code in this repo is here for reading.
 Modbus to MQTT gateway (Python). Named this way because it replaced the functionality of Node Red  
 `pyred.py`  
 
-Modbus to MQTT gateway (C implementation of `pyred.py`)  
-`cred.c`
+Modbus to MQTT gateway (C implementation of `pyred.py` - can only read Modbus and not write)  
+`cred.c`  
+    Experimental multithreded versions of `cred.c` to read Modbus and publish to MQTT concurrently.  
+    `cred_mt_v1.c`  
+    `cred_mt_v2.c`  
 
 PLC tag value logger  
 `logger.py`
